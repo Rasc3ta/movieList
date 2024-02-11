@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        color: white;
+      }
+
+      div {
+        padding: 1rem;
+        border: 0.25rem solid white;
+      }
+
+      ul {
+        padding: 0px;
+        list-style-type: none;
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        gap: 0.75rem;
+      }
+
+      li {
+        border: 0.25rem solid white;
+        padding: 0.5rem;
+      }
+
+      label,
+      #addFranchise,
+      button {
+        font-size: 1.5rem;
+      }
+
+      #addFranchise {
+        padding: 0.5rem;
+      }
+
+      button {
+        /* border: none; */
+        padding: 0.25em 3em;
+      }
+
+      .form, 
+      .delete
+      {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+    </style>
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <h1 id="heading" class="heading-main">Favourite Movie List</h1>
+      <ul>
+        <li>The Matrix</li>
+        <li>Star Wars</li>
+        <li>Harry Potter</li>
+        <li>Lord of the Rings</li>
+        <li>Marvel</li>
+      </ul>
+    </div>
+    <div class="form">
+      <label for="#addFranchise"
+        >Add Movie : <br />
+        <input type="text" name="" id="addFranchise" />
+      </label>
+      <button type="submit">Add</button>
+    </div>
+    <div class="delete">
+      <label for="#addFranchise"
+        >Remove Movie : <br />
+        <input type="text" name="" id="addFranchise" />
+      </label>
+      <button type="submit">Remove</button>
+    </div>
+  </body>
+</html>
